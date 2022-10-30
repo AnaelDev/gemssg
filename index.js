@@ -9,7 +9,7 @@ function sleep(ms) {
 
 const GoStumble = (auth) => new Promise((resolve, reject) => {
 
-  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/economy/purchase/free_gems', {
+  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/economy/purchase/menu_free_gems', {
     method: 'GET',
     headers: {
       'authorization': auth
