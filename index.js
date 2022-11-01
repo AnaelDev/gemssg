@@ -27,20 +27,12 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 
 (async () => {
 
-  console.log(` ▄▄▄       ██▀███   ███▄    █  ▄▄▄      ▒███████▒▒██   ██▒
-▒████▄    ▓██ ▒ ██▒ ██ ▀█   █ ▒████▄    ▒ ▒ ▒ ▄▀░▒▒ █ █ ▒░
-▒██  ▀█▄  ▓██ ░▄█ ▒▓██  ▀█ ██▒▒██  ▀█▄  ░ ▒ ▄▀▒░ ░░  █   ░
-░██▄▄▄▄██ ▒██▀▀█▄  ▓██▒  ▐▌██▒░██▄▄▄▄██   ▄▀▒   ░ ░ █ █ ▒ 
- ▓█   ▓██▒░██▓ ▒██▒▒██░   ▓██░ ▓█   ▓██▒▒███████▒▒██▒ ▒██▒
- ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒░   ▒ ▒  ▒▒   ▓▒█░░▒▒ ▓░▒░▒▒▒ ░ ░▓ ░
-  ▒   ▒▒ ░  ░▒ ░ ▒░░ ░░   ░ ▒░  ▒   ▒▒ ░░░▒ ▒ ░ ▒░░   ░▒ ░
-  ░   ▒     ░░   ░    ░   ░ ░   ░   ▒   ░ ░ ░ ░ ░ ░    ░  
-      ░  ░   ░              ░       ░  ░  ░ ░     ░    ░  
-                                        ░                 
-By : ${chalk.bold('Natchx#3695')}
+  console.log(`𝔸𝕟𝕒𝕖𝕝𝔻𝕖𝕧
+                                                  
+By : ${chalk.bold('elmintz#1306')}
 `);
 
-  const auth = rs.question('Masukin kode auth lu : ');
+  const auth = rs.question('Masukin kode auth kalianz : ');
   console.log('');
 
   while (true) {
@@ -48,7 +40,7 @@ By : ${chalk.bold('Natchx#3695')}
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Authentication Code Not Valid`));
+      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Kode autentikasi tidak valid..`));
       break;
 
     } else if (result.includes('User')) {
@@ -58,12 +50,13 @@ By : ${chalk.bold('Natchx#3695')}
       const country = data.User.Country;
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
+      const gems = data.User.Gems;
 
-console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.red(`User By Natch: ${username}`)} | ${chalk.blue(`Trophy By Natch : ${trophy}`)} | ${chalk.green(`Crown By Natch: ${crown}`)}`));
+console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.red(`User By AnaelDev: ${username}`)} | ${chalk.blue(`Gems By AnaelDev : ${gems}`)} | ${chalk.green(`Crown By AnaelDev: ${crown}`)}`));
       await sleep(6000);
 
     } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`Mampus ke banned akunnya aowokaw:v`));
+      console.log(chalk.bgRed(`Akunmu ud keban aowkwkwk`));
      break;
     }
   }
