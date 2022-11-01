@@ -50,7 +50,7 @@ By : ${chalk.bold('elmintz#1306')}
       const country = data.User.Country;
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
-      const gems = data.User.Gems;
+      const gems = data.User.gems;
 
 console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.red(`User By AnaelDev: ${username}`)} | ${chalk.blue(`Gems By AnaelDev : ${gems}`)} | ${chalk.green(`Crown By AnaelDev: ${crown}`)}`));
       await sleep(6000);
