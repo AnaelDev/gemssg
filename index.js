@@ -54,13 +54,13 @@ By : ${chalk.bold('elmintz#1306')}
       const country = data.User.Country;
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
-      const gems = data.User.gems;
+      const gems = data.User.Gems;
 
 console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.red(`User By AnaelDev: ${username}`)} | ${chalk.blue(`Gems By AnaelDev : ${gems}`)} | ${chalk.green(`Crown By AnaelDev: ${crown}`)}`));
       await sleep(6000);
 
     } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`Akunmu ud keban aowkwkwk`));
+      console.log(chalk.bgRed(`Akun luh ud keban aowkwkwk`));
      break;
     }
   }
