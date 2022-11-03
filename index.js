@@ -56,7 +56,7 @@ By : ${chalk.bold('elmintz#1306')}
       const crown = data.User.Crowns;
       const gems = data.User.Gems;
 
-console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.red(`User By AnaelDev: ${username}`)} | ${chalk.blue(`Gems By AnaelDev : ${gems}`)} | ${chalk.green(`Crown By AnaelDev: ${crown}`)}`));
+console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.red(`User By AnaelDev: ${username}`)} | ${chalk.blue(`Your region By AnaelDev : ${country}`)} | ${chalk.green(`Crown By AnaelDev: ${crown}`)}`));
       await sleep(6000);
 
     } else if (result == 'BANNED') {
